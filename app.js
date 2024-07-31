@@ -17,6 +17,11 @@ const upload = multer({ storage: storage });
 
 // Create MySQL connection
 const connection = mysql.createConnection({
+  //  host: 'localhost',
+  //  user: 'root',
+  //  password: '',
+  //  database: 'c237_restaurant'
+
     host: 'localhost',
     user: 'root',
     password: '',
