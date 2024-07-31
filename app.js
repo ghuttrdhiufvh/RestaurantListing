@@ -121,7 +121,7 @@ app.post('/editRestaurant/:id', (req, res) => {
     const { name, location } = req.body;
 
     
-    const sql = 'UPDATE restaurants SET name = ?, location = ?, WHERE restaurantId=? ';
+    const sql = 'UPDATE restaurants SET name = ?, location = ?, WHERE restaurantId= ? ';
     
     connection.query( sql, [name, location, restaurantId], (error, results) => {
         if (error) {
