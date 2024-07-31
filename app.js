@@ -22,10 +22,10 @@ const connection = mysql.createConnection({
   //  password: '',
   //  database: 'c237_restaurant'
 
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'c237_restaurant'
+    host: 'freedb.tech',
+    user: 'freedb_error',
+    password: 'wTc#YCsrn9&wW92',
+    database: 'freedb_miniprodb'
 });
 connection.connect((err) => {
     if (err) {
