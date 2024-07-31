@@ -80,7 +80,7 @@ app.get('/addRestaurant', (req, res) => {
     res.render('addRestaurant');
 });
 
-app.post('/addRestaurant', (req, res) => {
+app.post('/addRestaurant', upload.single('image'), (req, res) => {
     const { name, location } = req.body;
     let image;
     if (req.file) {
