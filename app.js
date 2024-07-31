@@ -82,6 +82,13 @@ app.get('/addRestaurant', (req, res) => {
 
 app.post('/addRestaurant', (req, res) => {
     const { name, location } = req.body;
+    let image;
+    if (req.file) {
+        image = req.file.filename;
+    } else {
+        image - null;
+    }
+
     const sql = 'INSERT INTO restaurants (restaurantName, restaurantLocation) VALUES (?, ?)';
     connection.query( sql, [name, location], (error, results) => {
         if (error) {
