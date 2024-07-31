@@ -23,9 +23,9 @@ const connection = mysql.createConnection({
   //  database: 'c237_restaurant'
 
     host: 'db4free.net',
-    user: 'c237_username',
+    user: 'c237_user',
     password: 'c237_pass',
-    database: 'c237_database'
+    database: 'c237_data'
 });
 connection.connect((err) => {
     if (err) {
